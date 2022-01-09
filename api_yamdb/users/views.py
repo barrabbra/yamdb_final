@@ -1,19 +1,14 @@
 from django.core.mail import send_mail
-from rest_framework import filters
-from rest_framework import status
-from rest_framework.decorators import action
-from rest_framework.decorators import api_view
-from rest_framework.decorators import permission_classes
-from rest_framework.permissions import AllowAny
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import filters, status
+from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from rest_framework_simplejwt.views import TokenObtainPairView
 
 from .models import User
 from .permissions import IsAdmin
-from .serializers import TokenSerializer
-from .serializers import UserSerializer
+from .serializers import TokenSerializer, UserSerializer
 
 
 class GetRefreshTokens(TokenObtainPairView):

@@ -1,12 +1,11 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import permissions
-from rest_framework import viewsets
+from rest_framework import permissions, viewsets
 
 from titles.models import Title
 from users.permissions import FullAccess
+
 from .models import Review
-from .serializers import CommentSerializer
-from .serializers import ReviewSerializer
+from .serializers import CommentSerializer, ReviewSerializer
 
 
 class ReviewViewSet(viewsets.ModelViewSet):

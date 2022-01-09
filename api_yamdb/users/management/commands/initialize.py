@@ -31,8 +31,9 @@ class Command(BaseCommand):
                     for i, key in enumerate(keys):
                         row_dict[key] = row[i]
                     data_dict.append(row_dict)
-                    obj, is_created = class_name.objects.\
-                        get_or_create(**row_dict)
+                    obj, is_created = (
+                        class_name.objects.get_or_create(**row_dict)
+                    )
                     print(obj, is_created)
 
     def add_arguments(self, parser):
