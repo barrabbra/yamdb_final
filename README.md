@@ -8,7 +8,7 @@ API музыкального проекта.
 Более подробная информация доступна в документации по адресу /redoc/
 
 ### Статус проекта
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/barrabbra/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Технологии
 Python 3.7
