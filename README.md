@@ -63,6 +63,10 @@ docker-compose exec web python manage.py collectstatic --no-input
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
+### Рабочий проект
+API проекта доступен по ссылке:
+http://51.250.20.140
+
 ### Авторы
 Бикеев Рустам
 github: @barrabbra
